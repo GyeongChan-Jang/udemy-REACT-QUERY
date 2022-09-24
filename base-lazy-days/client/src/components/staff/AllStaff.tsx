@@ -8,6 +8,7 @@ import { Staff } from './Staff';
 export function AllStaff(): ReactElement {
   // replace with data from React Query
   const { staff, filter, setFilter } = useStaff();
+  console.log(filter);
   const treatments = useTreatments();
 
   return (
